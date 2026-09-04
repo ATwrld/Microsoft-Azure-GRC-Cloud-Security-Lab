@@ -1,0 +1,77 @@
+Team Thomas LLC 
+
+*Company overview  
+
+Team Thomas LLC is family-owned business with 3 employees  
+
+The company wants to start using Microsoft Azure . 
+
+ 
+
+*Business Objects  
+
+1. Provide customers with secure access to their financial information. 
+
+ 2. Protect customer personal and financial information.  
+
+3. Maintain availability of the customer portal.  
+
+4. Detect and respond to security incidents.  
+
+5. Meet applicable security and compliance requirements. 
+
+*Cloud Environment  
+
+Cloud Provider: Microsoft Azure  
+
+The environment will contain:  
+
+- Azure Virtual Network 
+
+ - Virtual Machines / Applications 
+
+ - Azure Storage 
+
+ - Microsoft Entra ID 
+
+ - Azure Key Vault 
+
+ - Azure Monitor 
+
+ - Log Analytics  
+
+- Microsoft Defender for Cloud - Microsoft Sentinel 
+
+* Sensitive Information  
+
+The Environment may contain: 
+
+- Customer names 
+
+ - Email addresses 
+
+ - Phone numbers  
+
+- Financial information 
+
+ - Account information 
+
+ - Authentication information 
+
+*Security Objectives 
+
+- Confidentiality 
+
+ -Integrity  
+
+- Availability  
+
+- Least privilege 
+
+ - Security monitoring 
+
+ - Incident response 
+
+ - Risk management 
+
+ - Regulatory compliance 
