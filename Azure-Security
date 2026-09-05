@@ -1,1 +1,10 @@
-
+Identity & Access Management
+The Azure environment will use Microsoft Entra ID to manage
+identities and access. Access will follow the principle of
+least privilege.
+Security controls will include:
+- Microsoft Entra ID
+- Multi-factor authentication
+- Azure RBAC
+- Least privilege
+- Privileged access management
