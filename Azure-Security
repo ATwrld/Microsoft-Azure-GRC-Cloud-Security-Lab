@@ -8,3 +8,17 @@ Security controls will include:
 - Azure RBAC
 - Least privilege
 - Privileged access management
+
+
+Network Security 
+This Azure Envoirment will use network segmentaation and traffic 
+contorls to resetrich unauthrized  communicatoon between resourses. 
+
+Security should include:
+
+Azure virtual networks
+Subnets 
+Network security Groups 
+Azure Firewall 
+
+Data Protection
