@@ -22,3 +22,66 @@ Network security Groups
 Azure Firewall 
 
 Data Protection
+Senstive information stored with the azure enviroment will be proteted against access, disclousre, 
+modification and loss. 
+
+Secuirty controls will include:
+
+-Azure storage security 
+-Encryption at rest
+-Encrption in transit 
+-Azure Key Vault
+-Access cobtrols 
+-Backup and recovery 
+
+Logging & Monitoring
+
+The Azure enviroment will implement centralized logging and monitoring to idenity suspicious activity, support seurity investigtions
+and provide evidence for security control.
+
+Threat Detection & Vulnerability Managment 
+The Azure enviroment will use seurity monitoring and vulnerability managment capabilites to idenity threats weakness and misconfigurations.
+
+Security controls will include:
+
+-Microsoft Defender for Clouda
+-Vulnerability assessments
+-Security recommendations
+-Patch managment 
+-Secure configuration
+-Security alerts
+-Vulnerability remediation
+
+Governance & Compliance
+
+The Azure environment will use governance and compliance controls
+to enforce security requirements, identify policy violations, and
+monitor the security posture of cloud resources.
+
+Security controls will include:
+
+- Azure Policy
+- Resource tagging
+- Resource locks
+- Security standards
+- Compliance monitoring
+- Access governance
+- Policy enforcement
+
+Incident Response
+
+The organization will maintain an incident response process to
+detect, investigate, contain, eradicate, and recover from security
+incidents affecting the Azure environment.
+
+The incident response process will include:
+
+- Security alert detection
+- Incident analysis
+- Incident classification
+- Containment
+- Eradication
+- Recovery
+- Incident documentation
+- Lessons learned
+- Security control improvements
