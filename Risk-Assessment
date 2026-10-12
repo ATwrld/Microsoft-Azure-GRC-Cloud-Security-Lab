@@ -27,3 +27,19 @@ Risk levels:
 **Inherent Risk Score:** 2 × 3 = 6 (High).
 
 **Residual Risk:** To be assessed after evaluating the effectiveness of existing controls.
+
+| R-02 | Excessive user permissions could allow unauthorized changes or deletion of Azure resources | Azure resource group and cloud resources | Medium (2) | High (3) | High (6) | Entra ID security group, Azure RBAC Reader role | Medium (3) — provisional |
+
+## R-02 Risk Justification
+
+**Likelihood:** Medium (2) — Administrators may accidentally assign excessive permissions during user onboarding or access changes.
+
+**Impact:** High (3) — Excessive permissions could allow unauthorized modification or deletion of important Azure resources.
+
+**Inherent Risk Score:** 2 × 3 = 6 (High).
+
+**Existing Controls:** Microsoft Entra security group GRP-Azure-Employees and Azure RBAC Reader role assigned at the resource group scope.
+
+**Residual Risk:** Medium (3) — Provisionally estimated as Low likelihood (1) × High impact (3), assuming the intended role assignments are effective. Administrative mistakes and other privileged assignments remain possible.
+
+**Verification Needed:** Review IAM role assignments on rg-azure-grc-lab and confirm that GRP-Azure-Employees has Reader access.
