@@ -43,3 +43,22 @@ Risk levels:
 **Residual Risk:** Medium (3) — Provisionally estimated as Low likelihood (1) × High impact (3), assuming the intended role assignments are effective. Administrative mistakes and other privileged assignments remain possible.
 
 **Verification Needed:** Review IAM role assignments on rg-azure-grc-lab and confirm that GRP-Azure-Employees has Reader access.
+
+
+| R-03 | Failure to alert on suspicious Azure activity | Azure monitoring and incident detection | Medium (2) | High (3) | High (6) | Azure Activity Logs, Log Analytics, Microsoft Sentinel connection | Pending verification |
+
+## R-03 Risk Justification
+
+**Risk Statement:** If effective alert rules are missing or misconfigured, suspicious Azure activity may go undetected, resulting in delayed incident response and increased business damage.
+
+**Likelihood:** Medium (2) — Suspicious activity could go undetected if alerting is not configured or functioning. This is a provisional assessment.
+
+**Impact:** High (3) — Delayed detection could allow an attacker to cause significant financial, operational, or reputational damage.
+
+**Inherent Risk Score:** 2 × 3 = 6 (High).
+
+**Existing Controls:** Azure Activity Logs forwarded to Log Analytics; Microsoft Sentinel connected to the workspace.
+
+**Residual Risk:** Pending verification — Effective detection rules and alert generation have not yet been confirmed.
+
+**Verification Needed:** Review Microsoft Sentinel analytics rules and test whether a controlled, harmless Azure activity generates the expected detection or alert.
