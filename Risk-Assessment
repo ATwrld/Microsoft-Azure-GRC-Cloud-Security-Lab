@@ -1,1 +1,29 @@
+# Risk Assessment
 
+## Risk Scoring Methodology
+
+Likelihood: Low = 1, Medium = 2, High = 3.
+Impact: Low = 1, Medium = 2, High = 3.
+
+Risk Score = Likelihood × Impact.
+
+Risk levels:
+- Low: 1–2
+- Medium: 3–4
+- High: 6–9
+
+## Risk Register
+
+| ID | Risk | Asset | Likelihood | Impact | Risk Level | Existing Controls | Residual Risk |
+|---|---|---|---|---|---|---|---|
+| R-01 | Unauthorized access to confidential customer data | Azure Storage | Medium (2) | High (3) | High (6) | Entra ID, RBAC, Private Endpoint, Encryption | TBD |
+
+## R-01 Risk Justification
+
+**Likelihood:** Medium — Credential theft and excessive permissions could allow unauthorized access.
+
+**Impact:** High — Exposure of confidential financial data could cause financial loss, compliance issues, and damage to customer trust.
+
+**Inherent Risk Score:** 2 × 3 = 6 (High).
+
+**Residual Risk:** To be assessed after evaluating the effectiveness of existing controls.
