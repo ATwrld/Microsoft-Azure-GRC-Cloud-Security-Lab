@@ -34,3 +34,15 @@ Document the Azure security controls implemented in the Team Thomas LLC lab, the
 **Limitation:** End-to-end access testing was not completed before the Azure free trial expired.
 
 **Recommended action:** When Azure access is restored, verify storage access through the private endpoint, test that public access is blocked, and review identity-based data permissions.
+
+| C-03 | Security Logging and Monitoring | DE.CM — Continuous Monitoring | Record Azure management activity and support detection of suspicious resource changes | Partially verified — log ingestion confirmed; Sentinel alert generation not tested |
+
+## C-03 Assessment Notes
+
+**Implementation:** Configured Azure subscription Activity Logs to forward to Log Analytics and connected Microsoft Sentinel to the workspace. Created and enabled a scheduled analytics rule to detect successful Azure resource deletion operations.
+
+**Evidence:** A resource group tag update appeared in the subscription Activity Log, and Azure Activity records were observed in Log Analytics using KQL. The Sentinel analytics rule was confirmed as enabled.
+
+**Limitation:** A matching deletion event was not tested, so successful alert and incident generation remain unverified. The rule covers resource deletion operations, not all suspicious Azure activity.
+
+**Recommended action:** When Azure access is available, test the rule with a controlled event, verify alert and incident creation, and review additional detection requirements.
