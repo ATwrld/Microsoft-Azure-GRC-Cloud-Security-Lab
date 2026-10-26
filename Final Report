@@ -1,1 +1,41 @@
+# Team Thomas LLC — Azure Cloud Security & GRC Final Assessment Report
 
+## 1. Executive Summary
+
+**Organization:** Team Thomas LLC  
+**Assessment Framework:** NIST Cybersecurity Framework (CSF) 2.0  
+**Environment:** Microsoft Azure Cloud Security Lab  
+**Assessment Type:** Cloud Security Configuration and GRC Assessment
+
+### Assessment Overview
+
+Team Thomas LLC is a fictional financial services organization used to simulate cloud security governance, risk management, and compliance activities in Microsoft Azure.
+
+The project involved configuring cloud security controls, identifying security risks, mapping controls to the NIST Cybersecurity Framework 2.0, evaluating available evidence, and developing remediation plans for outstanding security gaps.
+
+### Key Accomplishments
+
+- I configured Microsoft Entra ID users, a security group, and Azure role-based access control (RBAC).
+- I implemented Azure Storage security controls, including encryption, restricted public network access, and a private endpoint.
+- I configured Azure networking using a virtual network, subnets, and network security groups.
+- I enabled Azure Activity Log forwarding to Log Analytics and verified log ingestion.
+- I configured Microsoft Sentinel and enabled a scheduled resource deletion detection rule.
+- I documented three security risks, three GRC controls, and two remediation items.
+
+### Assessment Results
+
+| Area | Assessment Result |
+|---|---|
+| Identity and Access Management | Partially verified |
+| Storage Data Protection | Partially verified |
+| Security Logging and Monitoring | Partially verified |
+| Risk Assessment | Three risks documented |
+| Remediation Planning | Two open remediation items |
+
+### Overall Conclusion
+
+The Azure lab demonstrated implementation of foundational cloud security controls and the application of GRC assessment practices.
+
+However, the assessment does not establish full compliance with NIST CSF 2.0. Azure RBAC group permissions, end-to-end storage access restrictions, and Microsoft Sentinel alert generation require additional verification.
+
+The Azure free trial expired before these remaining tests could be completed. These limitations have been documented rather than reported as successful tests.
