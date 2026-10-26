@@ -1,1 +1,29 @@
+# Security Remediation Plan
 
+**Organization:** Team Thomas LLC
+**Framework:** NIST Cybersecurity Framework (CSF) 2.0
+
+## REM-01: Verify Azure RBAC Group Permissions
+
+**Related control:** C-01 — Identity and Access Control
+
+**Related risk:** R-02 — Excessive User Permissions
+
+**Finding:** The GRP-Azure-Employees group membership was confirmed, but its intended Reader role assignment at the resource group scope was not verified. Two lab users had direct Reader assignments.
+
+**Potential impact:** Access permissions may not match the organization's intended least-privilege design.
+
+**Priority:** Medium
+
+**Remediation owner:** Cloud Administrator
+
+**Recommended actions:**
+1. Restore access to an Azure subscription when appropriate.
+2. Verify the intended security group's Azure RBAC role assignments.
+3. Review direct user assignments for unnecessary or duplicate access.
+4. Confirm effective permissions for representative group members.
+5. Capture sanitized evidence of the final role assignments.
+
+**Status:** Open — verification blocked by expired Azure trial
+
+**Closure criteria:** Intended permissions are confirmed, unnecessary assignments are addressed, and evidence is documented.
