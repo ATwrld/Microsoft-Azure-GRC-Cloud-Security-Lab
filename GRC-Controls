@@ -10,9 +10,10 @@ Document the Azure security controls implemented in the Team Thomas LLC lab, the
 
 | Control ID | Security Control | NIST CSF Category | Purpose | Verification Status |
 |---|---|---|---|---|
+
 | C-01 | Microsoft Entra ID and Azure RBAC | PR.AA — Identity Management, Authentication, and Access Control | Restrict employee access using least privilege | Partially verified — Entra group membership confirmed; intended group RBAC assignment not verified |
 
-## C-01 Assessment Notes
+#C-01 identity and access control assessment
 
 **Implementation:** Created the GRP-Azure-Employees security group and configured Azure RBAC permissions in the lab.
 
@@ -21,3 +22,15 @@ Document the Azure security controls implemented in the Team Thomas LLC lab, the
 **Limitation:** The Azure free trial expired before the group role assignment and effective permissions could be fully verified.
 
 **Recommended action:** When Azure access is available, verify the group's Reader role assignment at the intended resource group scope and review effective permissions for its members. 
+
+| C-02 | Azure Storage Data Protection | PR.DS — Data Security | Protect stored customer information through encryption, restricted network access, and secure connections | Partially verified — configuration observed; effectiveness testing incomplete |
+
+#C-02 Azure Storage data protection assessment
+
+**Implementation:** Configured Azure Storage with Microsoft-managed encryption, disabled public network access, an approved private endpoint, secure transfer required, and anonymous blob access disabled.
+
+**Evidence:** Storage security settings and private endpoint approval were observed during lab configuration.
+
+**Limitation:** End-to-end access testing was not completed before the Azure free trial expired.
+
+**Recommended action:** When Azure access is restored, verify storage access through the private endpoint, test that public access is blocked, and review identity-based data permissions.
