@@ -27,3 +27,29 @@
 **Status:** Open — verification blocked by expired Azure trial
 
 **Closure criteria:** Intended permissions are confirmed, unnecessary assignments are addressed, and evidence is documented.
+
+## REM-02: Verify Microsoft Sentinel Alert Detection
+
+**Related control:** C-03 — Security Logging and Monitoring
+
+**Related risk:** R-03 — Failure to Alert on Suspicious Azure Activity
+
+**Finding:** A Microsoft Sentinel analytics rule was created and enabled to detect successful Azure resource deletion operations. However, no controlled deletion event was tested to confirm alert or incident generation.
+
+**Potential impact:** Security personnel may not receive the expected notification when a monitored resource deletion occurs.
+
+**Priority:** High
+
+**Remediation owner:** Security Operations Analyst
+
+**Recommended actions:**
+1. Restore access to an Azure subscription when appropriate.
+2. Review the Sentinel analytics rule query, schedule, and alert settings.
+3. Generate a safe, authorized test event using a disposable resource.
+4. Confirm the event appears in Log Analytics.
+5. Verify that Sentinel creates the expected alert and incident.
+6. Capture sanitized evidence and document the test results.
+
+**Status:** Open — alert testing blocked by expired Azure trial
+
+**Closure criteria:** A controlled test confirms that the rule detects the intended event and generates an alert and incident, with supporting evidence recorded.
